@@ -3,7 +3,7 @@
 $host="Localhost";
 $user="root";
 $password="";
-$bd="prueba_proyecto";
+$bd="bd_proyecto_u";
 
 $conexion=mysqli_connect($host,$user,$password,$bd) or die("Error al conectar la base de datos");
 

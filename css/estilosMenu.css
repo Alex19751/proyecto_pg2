@@ -1,39 +1,53 @@
-body {font-family: "Lato", sans-serif;}
-
-.sidebar {
+ /* Estilos para el contenedor del sidebar */
+ .sidebar {
   height: 100%;
-  width: 160px;
+  width: 250px;
   position: fixed;
-  z-index: 1;
   top: 0;
   left: 0;
   background-color: #111;
-  overflow-x: hidden;
-  padding-top: 16px;
+  padding-top: 20px;
+  transition: all 0.3s;
+}
+body{
+  background: linear-gradient(to left, blue, cyan);
+}
+.voz{
+  background: black;
+  height: 50px;
+  border-radius:10%;
+  font-weight: bold;
+  color: white;
+}
+/* Ocultar el sidebar cuando se colapsa */
+.sidebar.collapsed {
+  margin-left: -250px;
 }
 
 .sidebar a {
-  padding: 6px 8px 6px 16px;
+  padding: 10px 15px;
   text-decoration: none;
-  font-size: 20px;
-  color: #818181;
+  font-size: 18px;
+  color: white;
   display: block;
-}
-.caret{
-  height: 5px;
-  width: 10px;
+  transition: 0.3s;
 }
 
 .sidebar a:hover {
-  color: #f1f1f1;
+  background-color: #575757;
 }
 
 .main {
-  margin-left: 160px; /* Same as the width of the sidenav */
-  padding: 0px 10px;
+  margin-left: 250px; /* Espacio para el sidebar */
+  padding: 16px;
+  transition: all 0.3s;
 }
 
-@media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
+/* Cuando el sidebar se colapsa, ajustamos el contenido */
+.main.collapsed {
+  margin-left: 0;
+}
+.text{
+  font-size: 20px;
+  font-weight: bold;
 }

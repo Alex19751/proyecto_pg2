@@ -1,0 +1,12 @@
+Definición de la función exponencial
+Una función exponencial tiene la forma general:
+
+
+Donde:
+
+𝑎
+a es una constante (el valor inicial o factor de escala).
+𝑏
+b es la base de la función exponencial, que debe ser un número positivo y diferente de 1.
+𝑥
+x es la variable independiente, que usualmente representa el tiempo, la distancia, o cualquier otra variable de interés.
