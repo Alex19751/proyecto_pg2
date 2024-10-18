@@ -2,10 +2,11 @@
 	margin: auto;
 	height: 25em;
 	width: 25em;
-	background: linear-gradient(to left, orange, red);	
-	border-radius: 5em;
+	background: black;	
+	border-radius: 3em;
 }
 label{
+	color: white;
 	font-size: 3em;
 	font-weight: bold;
 }
@@ -18,10 +19,12 @@ body{
 	background: linear-gradient(to left, blue, cyan);
 }
 .botones{
+	color: black;
 	height: 3em;
 	width: 10em;
 	border-radius: 25em;
 	background: white;
 	font-size: 15px;
 	font-weight: bold;
+	background:white;
 }

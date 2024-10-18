@@ -82,12 +82,12 @@
     }
     echo "</ul>";
     ?>
-    <a data-toggle="collapse" data-target="#demo5.1" href="#home"><i class="fa fa-fw fa-home"></i>Capitulo 5.1<span class="caret"></span></a>
+    <a data-toggle="collapse" data-target="#demo9" href="#home"><i class="fa fa-fw fa-home"></i>Capitulo 5.1<span class="caret"></span></a>
     <?php
     require "conexion.php";
-    $query = "SELECT * FROM temas WHERE Capitulo = 5.1";
+    $query = "SELECT * FROM temas WHERE Capitulo = 9";
     $result = mysqli_query($conexion, $query);
-    echo "<ul id='demo5.1' class='collapse'>";
+    echo "<ul id='demo9' class='collapse'>";
     while ($mostrar = mysqli_fetch_array($result)) {
         $nombre_tema = $mostrar["Nombre_Tema"];
         $descripcion = $mostrar["Descripcion"];
@@ -138,12 +138,12 @@
     }
     echo "</ul>";
     ?>
-    <a href="#logout"><i class="fa fa-fw fa-sign-out"></i> Cerrar sesión</a>
+    <a href="login.php"><i class="fa fa-fw fa-sign-out"></i> Cerrar sesión</a>
 </div>
 
 <div class="main" id="main">
     <button id="toggleSidebar" class="btn btn-primary mb-3">Mostrar/Ocultar Menú</button>
-    <h2><p>Explicación</p></h2>
+    <h2><p>Maestro</p></h2>
     <div class="text"></div> <!-- Aquí se mostrará el texto poco a poco -->
 
     <button class="voz" onclick="leerTexto()">Leer en voz alta</button>
