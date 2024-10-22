@@ -12,7 +12,7 @@
 <body>
 
 <div class="sidebar" id="sidebar">
-    <a data-toggle="collapse" data-target="#demo" href="#home"><i class="fa fa-fw fa-home"></i>Capitulo 1<span class="caret"></span></a>
+    <a data-toggle="collapse" data-target="#demo" href="#home"><i class="fa fa-fw fa-home"></i>Menu admin<span class="caret"></span></a>
     <?php
     require "conexion.php";
     $query = "SELECT * FROM temas WHERE Capitulo = 1";
@@ -26,34 +26,8 @@
     }
     echo "</ul>";
     ?>
-    <a data-toggle="collapse" data-target="#demo2" href="#home"><i class="fa fa-fw fa-home"></i>Capitulo 2<span class="caret"></span></a>
-    <?php
-    require "conexion.php";
-    $query = "SELECT * FROM temas WHERE Capitulo = 2";
-    $result = mysqli_query($conexion, $query);
-    echo "<ul id='demo2' class='collapse'>";
-    while ($mostrar = mysqli_fetch_array($result)) {
-        $nombre_tema = $mostrar["Nombre_Tema"];
-        $descripcion = $mostrar["Descripcion"];
-        $contenido = $mostrar["Contenido"];
-        echo "<li><a href='#' class='tema' data-descripcion='".$descripcion."' data-contenido='".$contenido."'>".$nombre_tema."</a></li>";
-    }
-    echo "</ul>";
-    ?>
-    <a data-toggle="collapse" data-target="#demo3" href="#home"><i class="fa fa-fw fa-home"></i>Capitulo 3<span class="caret"></span></a>
-    <?php
-    require "conexion.php";
-    $query = "SELECT * FROM temas WHERE Capitulo = 3";
-    $result = mysqli_query($conexion, $query);
-    echo "<ul id='demo3' class='collapse'>";
-    while ($mostrar = mysqli_fetch_array($result)) {
-        $nombre_tema = $mostrar["Nombre_Tema"];
-        $descripcion = $mostrar["Descripcion"];
-        $contenido = $mostrar["Contenido"];
-        echo "<li><a href='#' class='tema' data-descripcion='".$descripcion."' data-contenido='".$contenido."'>".$nombre_tema."</a></li>";
-    }
-    echo "</ul>";
-    ?>
+   
+    
     <a data-toggle="collapse" data-target="#demo4" href="#home"><i class="fa fa-fw fa-home"></i>Capitulo 4<span class="caret"></span></a>
     <?php
     require "conexion.php";
